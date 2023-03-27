@@ -1,0 +1,22 @@
+root {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.favorite-img {
+  width: 100%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
