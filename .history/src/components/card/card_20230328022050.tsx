@@ -26,8 +26,8 @@ export const Card = ({ className, movie }: CardProps) => {
                 className={styles['card-img']}
             />
             <div className={styles['card-details']}>
-                <h1>{movie.title.substring(0 , 26)}</h1>
-                <span className={styles.rating}>{movie.vote_average.toFixed(1)}</span>
+                <h1>{movie.title}</h1>
+                <span className={styles.rating}>{movie.vote_average.}</span>
                 <p className={styles['card-desc']}>{movie.overview.substring(0, 180)}</p>
                 <button
                     className={styles['card-button']}

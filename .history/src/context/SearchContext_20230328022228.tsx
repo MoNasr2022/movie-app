@@ -37,7 +37,7 @@ const SearchReducer = (state: State, action: SearchAction) => {
             return {
                 ...state,
                 query: action.payload,
-                
+                query: '',
             };
         default:
             return state;

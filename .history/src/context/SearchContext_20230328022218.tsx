@@ -25,19 +25,17 @@ const SearchReducer = (state: State, action: SearchAction) => {
             return {
                 ...state,
                 sortBy: action.payload,
-                query: '',
+                query:
             };
         case 'ADD_GENRE':
             return {
                 ...state,
                 genre: action.payload,
-                query: '',
             };
         case 'ADD_QUERY':
             return {
                 ...state,
                 query: action.payload,
-                
             };
         default:
             return state;

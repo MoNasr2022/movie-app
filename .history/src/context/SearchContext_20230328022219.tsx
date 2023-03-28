@@ -31,13 +31,11 @@ const SearchReducer = (state: State, action: SearchAction) => {
             return {
                 ...state,
                 genre: action.payload,
-                query: '',
             };
         case 'ADD_QUERY':
             return {
                 ...state,
                 query: action.payload,
-                
             };
         default:
             return state;

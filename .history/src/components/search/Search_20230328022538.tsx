@@ -21,7 +21,7 @@ export const Search = ({ className }: SearchProps) => {
             />
             <button
                 className={styles['search-button']}
-                onClick={() => dispatch({ type: 'ADD_QUERY', payload: input })}
+                onClick={() => dispatch({ type: 'ADD_QUERY', payload: input }, setInput(''))}
             >
                 Search
             </button>

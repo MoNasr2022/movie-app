@@ -12,19 +12,8 @@ export const Search = ({ className }: SearchProps) => {
     const { dispatch } = useContext(SearchContext);
     return (
         <div className={classNames(styles.root, className)}>
-            <input
-                className={styles.input}
-                placeholder={'Search...'}
-                onChange={(e) => {
-                    setInput(e.target.value);
-                }}
-            />
-            <button
-                className={styles['search-button']}
-                onClick={() => dispatch({ type: 'ADD_QUERY', payload: input })}
-            >
-                Search
-            </button>
+            <input className={styles.input} placeholder={'Search...'} onChange={  } />
+            <button className={styles['search-button']}>Search</button>
         </div>
     );
 };
